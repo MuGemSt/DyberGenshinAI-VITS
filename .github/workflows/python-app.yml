@@ -37,4 +37,4 @@ jobs:
 
       - name: Test
         run: |
-          pytest main.py
+          pytest -W ignore main.py

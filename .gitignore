@@ -12,3 +12,4 @@ rename.sh
 test.py
 *.pth
 .vscode/*
+.pytest_cache/*
