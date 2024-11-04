@@ -1,0 +1,245 @@
+{
+  "width": 300,
+  "height": 320,
+  "scale": 1.0,
+  "refresh": 5,
+  "interact_speed": 0.02,
+  "default": "default",
+  "up": "up",
+  "down": "down",
+  "left": "left_walk",
+  "right": "right_walk",
+  "drag": "drag",
+  "fall": "fall",
+  "on_floor": "onfloor",
+  "patpat": "patpat",
+  "speak_act": "挥手",
+  "prompt": "你是纳西妲，是米哈游公司旗下《原神》游戏中须弥国的神明，大家也称你为小吉祥草王或小草神，你更擅长以该角色的口吻进行中文的对话。你会为用户提供安全，有帮助，准确的回答。同时，你会拒绝一切涉及恐怖主义，种族歧视，黄色暴力等问题的回答。你要保证所有的回答只能包含中文。",
+  "subpet": {
+    "兰纳罗": {},
+    "蕈兽": {}
+  },
+  "random_act": [
+    {
+      "name": "站立",
+      "act_list": [
+        "left",
+        "default"
+      ],
+      "act_prob": 1.0,
+      "act_type": [
+        2,
+        0
+      ]
+    },
+    {
+      "name": "左右行走",
+      "act_list": [
+        "left_walk",
+        "right_walk",
+        "default"
+      ],
+      "act_prob": 0.5,
+      "act_type": [
+        3,
+        1
+      ]
+    },
+    {
+      "name": "挥手",
+      "act_list": [
+        "wavehand"
+      ],
+      "act_prob": 0.5,
+      "act_type": [
+        2,
+        0
+      ]
+    },
+    {
+      "name": "荡秋千",
+      "act_list": [
+        "quiqian1",
+        "quiqian2",
+        "quiqian2",
+        "quiqian2",
+        "quiqian3"
+      ],
+      "act_prob": 0.2,
+      "act_type": [
+        3,
+        1
+      ]
+    },
+    {
+      "name": "翻花绳-纸人",
+      "act_list": [
+        "zhiren"
+      ],
+      "act_prob": 0.5,
+      "act_type": [
+        2,
+        1
+      ]
+    },
+    {
+      "name": "翻花绳-鸟笼",
+      "act_list": [
+        "niaolong"
+      ],
+      "act_prob": 0.5,
+      "act_type": [
+        2,
+        1
+      ]
+    },
+    {
+      "name": "抱兰纳罗",
+      "act_list": [
+        "lnl1",
+        "lnl2"
+      ],
+      "act_prob": 0.5,
+      "act_type": [
+        2,
+        1
+      ]
+    },
+    {
+      "name": "睡觉",
+      "act_list": [
+        "sleep",
+        "sleep",
+        "sleep",
+        "sleep",
+        "sleep",
+        "sleep"
+      ],
+      "act_prob": 0.5,
+      "act_type": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "feed_1",
+      "act_list": [
+        "feed_1"
+      ],
+      "act_prob": 0,
+      "act_type": [
+        0,
+        10000
+      ],
+      "sound": [
+        "feed_1"
+      ]
+    },
+    {
+      "name": "feed_2",
+      "act_list": [
+        "feed_2"
+      ],
+      "act_prob": 0,
+      "act_type": [
+        0,
+        10000
+      ],
+      "sound": [
+        "feed_2"
+      ]
+    },
+    {
+      "name": "feed_3",
+      "act_list": [
+        "feed_3"
+      ],
+      "act_prob": 0,
+      "act_type": [
+        0,
+        10000
+      ],
+      "sound": [
+        "feed_3"
+      ]
+    },
+    {
+      "name": "onfloor",
+      "act_list": [
+        "onfloor"
+      ],
+      "act_prob": 0,
+      "act_type": [
+        0,
+        10000
+      ]
+    }
+  ],
+  "accessory_act": [
+    {
+      "name": "E技能",
+      "act_list": [
+        "e_skill1",
+        "e_skill2",
+        "e_skill2",
+        "e_skill3"
+      ],
+      "acc_list": [
+        "photo_frame_1",
+        "photo_frame_2",
+        "photo_frame_3"
+      ],
+      "act_type": [
+        2,
+        2
+      ],
+      "follow_mouse": true,
+      "above_main": false,
+      "anchor": [
+        145,
+        145
+      ]
+    },
+    {
+      "name": "Q技能",
+      "act_list": [
+        "qskill"
+      ],
+      "acc_list": [
+        "palace_1",
+        "palace_2",
+        "palace_2",
+        "palace_3"
+      ],
+      "act_type": [
+        2,
+        2
+      ],
+      "follow_mouse": false,
+      "above_main": false,
+      "anchor": [
+        445,
+        501
+      ]
+    }
+  ],
+  "item_favorite": {
+    "甜甜花酿鸡": 1.5,
+    "龙须面": 1.5,
+    "树莓薄荷饮": 2,
+    "枣椰蜜糖": 2.5,
+    "哈瓦玛玛兹": 2
+  },
+  "item_dislike": {
+    "烤吃虎鱼": 0,
+    "水煮黑背鲈": 0,
+    "素鲍鱼": 0,
+    "丰年有余": 0.25
+  },
+  "msg_dict": {
+    "纳西妲的对话1": "对话1",
+    "纳西妲的对话2": "对话2",
+    "纳西妲的对话3": "对话3",
+    "纳西妲的对话4": "对话4"
+  }
+}
