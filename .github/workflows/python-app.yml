@@ -24,14 +24,13 @@ jobs:
       - name: Setup Miniconda
         uses: conda-incubator/setup-miniconda@v3
         with:
-          python-version: "3.9"
+          python-version: "3.11"
           auto-activate-base: "true"
 
       - name: Install dependencies
         run: |
-          conda install pytorch=1.12.1=py3.9_cuda11.3_cudnn8_0 pywin32 --yes
           pip install -r requirements.txt
 
       - name: Test
         run: |
-          python ci.py
+          python ./.github/ci.py
