@@ -11,8 +11,8 @@ DyberPet_GenshinImpact + KimiChat + BertVITS2
 ## Usage
 ### Environment
 ```bash
-conda create -n pet python=3.11 -y
-conda activate pet
+conda create -n py311 python=3.11 -y
+conda activate py311
 pip install -r requirements.txt
 ```
 
@@ -30,6 +30,6 @@ python game.py
 ## Thanks
 - [DyberPet](https://github.com/ChaozhongLiu/DyberPet)
 - [DyberPet_GenshinImpact](https://github.com/ChaozhongLiu/DyberPet_GenshinImpact)
-- [KimiChat](https://platform.moonshot.cn/docs/api-reference)
+- [KimiChat](https://platform.moonshot.cn/console/api-keys)
 - [Bert-VITS2](https://github.com/fishaudio/Bert-VITS2)
 - [Bert-VITS2_Genshin_TTS](https://www.modelscope.cn/studios/erythrocyte/Bert-VITS2_Genshin_TTS)
