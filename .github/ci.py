@@ -2,7 +2,7 @@ import time
 import subprocess
 
 # 运行 Python 脚本的路径
-script_path = "game.py"
+script_path = "../game.py"
 
 # 创建子进程并运行 Python 脚本
 process = subprocess.Popen(
