@@ -24,7 +24,7 @@ cd DyberGenshinAI-VITS
 
 ### Run
 ```bash
-python game.py
+python main.py
 ```
 
 ## Thanks
