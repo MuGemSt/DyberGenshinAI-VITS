@@ -5,6 +5,8 @@ import sys
 if sys.platform == "darwin":
     os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
 
+os.environ["MODELSCOPE_LOG_LEVEL"] = "40"
+
 import logging
 
 logging.getLogger("numba").setLevel(logging.WARNING)
@@ -35,7 +37,7 @@ from modelscope import snapshot_download
 
 class TTS:
     def __init__(self):
-        domain = "https://www.modelscope.cn/api/v1/models/MuGemSt/Hoyo-Bert-VITS2-V1/repo?Revision=master&FilePath="
+        domain = "https://www.modelscope.cn/models/MuGemSt/hoyoTTS/resolve/master/"
         model_path = download_file(domain + "G_78000.pth")
         self.hps = get_hparams_from_url(domain + "config.json")
         self.device = (

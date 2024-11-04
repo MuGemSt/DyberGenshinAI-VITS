@@ -273,7 +273,7 @@ def get_hparams_from_dir(model_dir):
 
 
 def download_file(file_url: str):
-    filename = "data/" + file_url.split("&FilePath=")[-1]
+    filename = "data/" + file_url.split("/")[-1]
     if os.path.exists(filename):
         return filename
 

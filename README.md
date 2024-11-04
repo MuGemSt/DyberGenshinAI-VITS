@@ -10,9 +10,8 @@ DyberPet_GenshinImpact + KimiChat + BertVITS2
 
 ## Usage
 ### Environment
-Windows 10 + NVIDIA + conda
 ```bash
-conda create -n pet --yes --file conda.txt
+conda create -n pet python=3.11 -y
 conda activate pet
 pip install -r requirements.txt
 ```
@@ -27,13 +26,6 @@ cd DyberGenshinAI-VITS
 ```bash
 python game.py
 ```
-
-### Modules
-```bash
-git checkout module
-```
-Copy role module directories in `.\DyberGenshinAI-VITS\res\role` from `module` to `main` branch;<br>
-Copy item module directories in `.\DyberGenshinAI-VITS\res\item` from `module` to `main` branch;
 
 ## Thanks
 - [DyberPet](https://github.com/ChaozhongLiu/DyberPet)
