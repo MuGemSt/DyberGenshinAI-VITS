@@ -1,5 +1,6 @@
 # coding:utf-8
 import os
+import re
 import json
 from openai import OpenAI
 from PySide6.QtWidgets import QWidget
@@ -69,8 +70,13 @@ class Speaker(QThread):
             return
 
         # 发声
+        response = "以下是我的回答"
+        if len(result) <= 1000 and not re.search(r"[a-zA-Z]", result):
+            response = result
+
         audio_path, audio_duration = self.tts.speech(
-            content=result, speaker=settings.petname
+            content=response,
+            speaker=settings.petname,
         )
 
         if self.speaking:
